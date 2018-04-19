@@ -36,17 +36,17 @@ export default class App extends React.Component {
 File: webpack.config.js
 ```
 {
-      test: /\.css$/,
-      use: [
-        {
-          loader: "css-loader",
-          options: {
-           modules: true,
-           localIdentName: '[path][name]__[local]--[hash:base64:5]'
-          }
-        }
-      ],
-      include: path.join(__dirname, 'app')
+  test: /\.css$/,
+  use: [
+    {
+      loader: "css-loader",
+      options: {
+       modules: true,
+       localIdentName: '[path][name]__[local]--[hash:base64:5]'
+      }
     }
+  ],
+  include: path.join(__dirname, 'app')
+}
 ```
 
