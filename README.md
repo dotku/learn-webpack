@@ -38,6 +38,7 @@ File: webpack.config.js
 {
   test: /\.css$/,
   use: [
+    {loader: "style-loader"},
     {
       loader: "css-loader",
       options: {
